@@ -1,0 +1,45 @@
+* {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+#root {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.fade-in-container {
+  opacity: 0;
+  transform: translateY(0px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in-container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-logo {
+  opacity: 0;
+  scale: 0.5;
+  transform: translateY(200px);
+  transition: opacity 3s ease-out, scale 3s ease-out, transform 3s ease-out;
+}
+
+.fade-in-logo.fade-in {
+  opacity: 1;
+  scale: 1;
+  transform: translateY(0);
+}
+
+
+.fade-in-text {
+  opacity: 0;
+  transform: translateY(200px);
+  transition: opacity 5s ease-out, transform 5s ease-out;
+}
+
+.fade-in-text.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
